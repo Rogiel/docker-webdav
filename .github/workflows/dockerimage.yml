@@ -8,4 +8,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build latest --tag rogiel/webdav:latest
+      run: docker build latest --tag docker.pkg.github.com/Rogiel/docker-webdav/webdav:latest &&
+           docker push docker.pkg.github.com/Rogiel/docker-webdav/webdav:latest
