@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build latest --file Dockerfile --tag rogiel/webdav:latest
+      run: docker build latest --tag rogiel/webdav:latest
